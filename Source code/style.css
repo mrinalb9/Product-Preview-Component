@@ -1,0 +1,204 @@
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    min-height: 25vh;
+    display: flex;
+    align-items: center;
+    max-height: fit-content;
+    justify-content: center;
+    padding: 20px 20px;
+    margin: 15px 15px;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    width: auto;
+    box-sizing: border-box;
+}
+
+.main-class
+{
+  justify-content: center;
+  margin: 0px auto;
+}
+
+.grid {
+    margin: 5.3em auto;
+    padding: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 650px;
+    min-width: 100px;
+    background-color: #fff;
+    border-radius: 1em;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* h2{
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+    line-height: 1em;
+} */
+
+p{
+    color: hsl(228, 12%, 48%);
+    padding: 1px;
+    width: 100%;
+    display: flex;
+   /*  flex-direction: column;
+    flex: 1;
+    height: 100px; */
+}
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Taviraj', serif; */
+
+picture img{
+    max-width: 100%;
+    display: flow-root;
+    height: 100%;
+}
+
+.card-content {
+    padding: 2.3em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    height: 100%;
+}
+
+h6.prod-cat 
+{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.7em;
+    color: hsl(228, 12%, 48%);
+    font-weight: 700;
+    margin-top: -15px;
+    margin-bottom: 25px;
+}
+
+h2.prod-name {
+    font-family: 'Fraunces', serif;
+    font-size: 2.8em;
+    line-height: 1em;
+    color: hsl(212, 21%, 14%);
+}
+
+p.prod-des{
+    color: hsl(228, 12%, 48%);
+    line-height: 3vh;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.current-price {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 25px;
+    padding-right: 0.3em;
+    margin-bottom: 15px;
+}
+
+.old-price {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    margin: 10px 10px;
+    padding-bottom: 4%;
+}
+
+.cta {
+    display: flex;
+    padding: 1em 1em;
+    background-color: hsl(158, 36%, 37%);
+    color: #fff;
+    border-width: 0ch;
+    border-radius: 0.5em;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: small;
+    cursor: pointer;
+    transition: background-color .3s linear;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.cta img {
+    padding-right: 0.9em;
+}
+
+.cta:hover{
+    background-color: hsl(159, 34%, 25%);
+}
+
+.price {
+    display: flex;   
+    align-items: center;
+}
+
+@media screen and (max-width:628px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    picture img {
+        max-height: 450px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .card-content{
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:375px)
+{
+    .main-class{
+        margin-top: 50px;
+        margin: -45px auto;
+        margin-bottom: -100px;
+    }
+
+    picture img{
+        max-height:290px ;
+    }
+
+    .card-content{
+        display: flex;
+        padding: 15px;
+    }
+
+    h6.prod-cat, h2.prod-name, p.prod-des, .price {
+        padding: 0px;
+    }
+    
+    h2.prod-name{
+        font-size: 28px;
+    }
+
+    p.prod-des{
+        font-size: 12px;
+    }
+    
+    span.current-price{
+        font-size: 23px;
+    }
+
+    button.cta {
+        padding: 7px 0;
+        font-size: 13px;
+    }
+
+}
